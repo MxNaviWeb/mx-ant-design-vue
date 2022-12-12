@@ -42,6 +42,7 @@ const AbstractSelectProps = () => ({
   autoClearSearchValue: PropTypes.bool,
   dropdownRender: PropTypes.func,
   loading: PropTypes.bool,
+  renderInput: PropTypes.bool,
 });
 const Value = PropTypes.shape({
   key: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

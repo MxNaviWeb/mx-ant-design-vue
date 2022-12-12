@@ -104,6 +104,7 @@ const Select = {
     autoClearSearchValue: PropTypes.bool.def(true),
     tabIndex: PropTypes.any.def(0),
     dropdownRender: PropTypes.func.def(menu => menu),
+    renderInput: PropTypes.bool.def(false),
     // onChange: noop,
     // onFocus: noop,
     // onBlur: noop,
@@ -711,7 +712,7 @@ const Select = {
         return;
       }
       this.clearBlurTime();
-      if (this.disabled) {
+      if (this.disabled || this.renderInput) {
         e.preventDefault();
         return;
       }
