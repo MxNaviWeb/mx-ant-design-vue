@@ -715,17 +715,15 @@ const Select = {
         this.renderInput &&
         target &&
         this.selectTriggerRef &&
-        this.selectTriggerRef.getInnerMenu() &&
+        this.selectTriggerRef.getPopupDOMNode() &&
+        this.selectTriggerRef.getPopupDOMNode().querySelector('.mx-select-render-input') &&
         this.selectTriggerRef
-          .getInnerMenu()
-          .$el.parentNode.parentNode.querySelector('.mx-select-render-input') &&
-        this.selectTriggerRef
-          .getInnerMenu()
-          .$el.parentNode.parentNode.querySelector('.mx-select-render-input')
+          .getPopupDOMNode()
+          .querySelector('.mx-select-render-input')
           .contains(target)
       ) {
         const setOpenState = e => {
-          if (!this.selectTriggerRef.getInnerMenu().$el.parentNode.parentNode.contains(e.target)) {
+          if (!this.selectTriggerRef.getPopupDOMNode().contains(e.target)) {
             this.setOpenState(false);
             document.body.removeEventListener('click', setOpenState);
           }
