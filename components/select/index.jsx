@@ -77,6 +77,7 @@ const SelectProps = {
   removeIcon: PropTypes.any,
   clearIcon: PropTypes.any,
   menuItemSelectedIcon: PropTypes.any,
+  virtual: PropTypes.bool,
 };
 
 const SelectPropTypes = {

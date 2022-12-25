@@ -105,6 +105,7 @@ const Select = {
     tabIndex: PropTypes.any.def(0),
     dropdownRender: PropTypes.func.def(menu => menu),
     renderInput: PropTypes.bool.def(false),
+    virtual: PropTypes.bool.def(false),
     // onChange: noop,
     // onFocus: noop,
     // onBlur: noop,
@@ -1671,6 +1672,7 @@ const Select = {
         onMouseenter={mouseenter}
         onMouseleave={mouseleave}
         showAction={props.showAction}
+        virtual={props.virtual}
         menuItemSelectedIcon={getComponentFromProp(this, 'menuItemSelectedIcon')}
         {...{
           directives: [
