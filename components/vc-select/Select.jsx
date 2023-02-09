@@ -712,8 +712,29 @@ const Select = {
         e.preventDefault();
         return;
       }
+      if (
+        this.renderInput &&
+        target &&
+        this.selectTriggerRef &&
+        this.selectTriggerRef.getPopupDOMNode() &&
+        this.selectTriggerRef.getPopupDOMNode().querySelector('.mx-select-render-input') &&
+        this.selectTriggerRef
+          .getPopupDOMNode()
+          .querySelector('.mx-select-render-input')
+          .contains(target)
+      ) {
+        const setOpenState = e => {
+          if (!this.selectTriggerRef.getPopupDOMNode().contains(e.target)) {
+            this.setOpenState(false);
+            document.body.removeEventListener('click', setOpenState);
+          }
+        };
+        document.body.addEventListener('click', setOpenState);
+        e.preventDefault();
+        return;
+      }
       this.clearBlurTime();
-      if (this.disabled || this.renderInput) {
+      if (this.disabled) {
         e.preventDefault();
         return;
       }
