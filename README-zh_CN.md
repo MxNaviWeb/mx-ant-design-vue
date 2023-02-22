@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-  <a href="https://www.antdv.com/" target="_blank">Ant Design Vue</a>
+  <a href="https://www.antdv.com/" target="_blank">Mx Ant Design Vue</a>
 </h1>
 
 <div align="center">
@@ -114,5 +114,3 @@ Support us with a monthly donation and help us continue our activities. [[Become
 Support us with a monthly donation and help us continue our activities. [[Become a backer](https://www.patreon.com/tangjinzhou)]
 
 <a href="https://www.mokeyjay.com" target="_blank"><img  width="64" style="border-radius: 50%;" src="https://www.mokeyjay.com/headimg.png" title="donation by Patreon"></a>
-
-## [更多赞助者 (通过 Patreon、支付宝、微信、paypal 等等)](https://github.com/vueComponent/ant-design-vue/blob/master/BACKERS.md)

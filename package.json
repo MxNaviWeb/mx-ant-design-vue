@@ -1,8 +1,8 @@
 {
   "name": "mx-ant-design-vue",
-  "version": "1.7.11",
-  "title": "Ant Design Vue",
-  "description": "An enterprise-class UI design language and Vue-based implementation",
+  "version": "1.7.12",
+  "title": "Mx Ant Design Vue",
+  "description": "美行vue2 组件库 fork antv 1.x",
   "keywords": [
     "ant",
     "design",
@@ -47,13 +47,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vueComponent/ant-design-vue.git"
+    "url": "git@github.com:MxNaviWeb/mx-ant-design-vue.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vueComponent/ant-design-vue/issues"
+    "url": "https://github.com/MxNaviWeb/mx-ant-design-vue/issues"
   },
-  "homepage": "https://www.antdv.com/",
   "peerDependencies": {
     "vue": "^2.6.0",
     "vue-template-compiler": "^2.6.0"
